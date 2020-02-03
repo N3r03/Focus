@@ -1,0 +1,66 @@
+﻿body {
+    background-image: url("./back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    text-align: center;
+    animation: type 5s steps(11) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid black;
+    width: 11ch;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 11ch;
+    }
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+    input[type="text"] {
+        background: #fff;
+        width: 340px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    input[type="button"] {
+        position: relative;
+        left: -5px;
+        border-radius: 0 25px 25px 0;
+        width: 150px;
+        height: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #94bbe9;
+        color: #fff;
+    }
+        input[type="button"]:hover {
+            background: #fd1d1d;
+        }
+

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    @*@Styles.Render("~/Content/StyleSheet1.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/test/style1.css")*@
+   
+
+    <link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="~/test/style1.css">
+    <title>Focus Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-image: url('~/test/back.jpg')
+        }
+
+
+        p {
+            margin-top: 50px;
+            position: relative;
+            text-align: center;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #fff;
+            font-size: 2em;
+            overflow: hidden;
+            background: linear-gradient(90deg, #000, #fff, #000);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: animate 5s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(255,255,255,.1);
+        }
+
+        @@keyframes animate {
+            0% {
+                background-position: -500%;
+            }
+
+            100% {
+                background-position: 500%;
+            }
+        }
+
+        .container {
+            margin-top: 60px;
+            margin-left: 280px;
+            width: 980px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+            .container a {
+                position: absolute;
+                display: inline-block;
+                margin: 20px;
+                width: 200px;
+                height: 200px;
+                padding: 10px 30px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+                transition: 0.5s;
+            }
+
+                .container a:nth-child(1) {
+                    background: linear-gradient(to right, #a6a6a6,#ffffff,#a6a6a6);
+                    background-size: 200%;
+                    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+                }
+
+                .container a:nth-child(2) {
+                    background: linear-gradient(to right, #a6a6a6,#ffffff,#a6a6a6);
+                    background-size: 200%;
+                    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+                }
+
+                .container a:nth-child(3) {
+                    background: linear-gradient(to right, #a6a6a6,#ffffff,#a6a6a6);
+                    background-size: 200%;
+                    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+                }
+
+                .container a:nth-child(4) {
+                    background: linear-gradient(to right, #a6a6a6,#ffffff,#a6a6a6);
+                    background-size: 200%;
+                    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+                }
+
+                .container a:nth-child(5) {
+                    background: linear-gradient(to right, #a6a6a6,#ffffff,#a6a6a6);
+                    background-size: 200%;
+                    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+                }
+
+                .container a:nth-child(6) {
+                    background: linear-gradient(to right, #a6a6a6,#ffffff,#a6a6a6);
+                    background-size: 200%;
+                    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+                }
+
+                .container a:hover {
+                    background-position-x: 100%;
+                    transform: translate(-15px);
+                }
+
+                .container a:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 100%;
+                    background: linear-gradietn(90deg, transparent,rgba(255,255,255,.4),transparent);
+                }
+
+                .container a:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 5%;
+                    width: 90%;
+                    height: 4px;
+                    background: rgba(0,0,0,.2);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    transition: 0.5s;
+                    z-index: -1;
+                }
+
+        img {
+            text-align: center;
+            position: center;
+            margin-left: 37px;
+            margin-top: 55px;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>*@
+    @*<div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </div>*@
+
+    <div class="container">
+        @RenderBody()
+        <hr />
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+    @*<div>
+        @RenderBody()
+    </div>*@   
+</body>
+            
+</html>
